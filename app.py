@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import requests
+import os
 
 app = Flask(__name__)
 
@@ -58,4 +59,6 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    # Make sure to bind to the correct port when running on Heroku
+    port = int(os.environ.get("PORT", 5000))  # Heroku provides this environment variable
+    app.run(host="0.0.0.0", port=port, debug=False)
