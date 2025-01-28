@@ -292,26 +292,58 @@ html {
 @media (max-width: 768px) {
     header h1 {
         padding-top: 5px;
-        font-size: 1.8rem;
+        font-size: 1.6rem; /* Reduced font size for h1 */
     }
 
     header p {
-        font-size: 1rem;
+        font-size: 0.9rem; /* Reduced font size for p */
     }
+
+    .navbar {
+        padding: 10px 0; /* Adjust padding for smaller screens */
+    }
+
+    .navbar-brand {
+        font-size: 1.6rem; /* Reduced font size for the brand */
+        margin-right: 15px; /* Adjust margin */
+    }
+
+    .navbar-links {
+        gap: 15px; /* Reduce gap between navbar items */
+    }
+
+    .navbar-links li {
+        font-size: 0.9rem; /* Reduce font size for links */
+    }
+
 }
 
 @media screen and (max-width: 480px) {
-    h1 {
-        font-size: 1.5rem;
+    header h1 {
+        font-size: 1.3rem; /* Reduced font size for h1 */
     }
 
-    p {
-        font-size: 0.9rem;
+    header p {
+        font-size:
+         0.8rem; /* Reduced font size for p */
     }
 
-    .hamburger-menu {
-        display: flex;
+    .navbar {
+        padding: 8px 0; /* Adjust padding for even smaller screens */
     }
+
+    .navbar-brand {
+        font-size: 1.4rem; /* Further reduce font size for the brand */
+        margin-right: 10px; /* Adjust margin */
+    }
+
+    .navbar-links {
+        gap: 10px; /* Reduce gap between navbar items further */
+    }
+
+    .navbar-links li {
+        font-size: 0.8rem; /* Further reduce font size for links */}
+    
 }
 
 .error {
